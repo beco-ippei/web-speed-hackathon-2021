@@ -14,7 +14,7 @@ async function main() {
   });
   await insertSeeds();
 
-  server.listen(Number(process.env.PORT || 3000), '0.0.0.0', () => {
+  server.listen(Number(process.env.PORT || 8081), '0.0.0.0', () => {
     const address = server.address();
     console.log(`Listening on ${address.address}:${address.port}`);
   });
